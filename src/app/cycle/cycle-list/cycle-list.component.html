@@ -1,0 +1,31 @@
+<a href="add-cycle"> <i class="bi bi-plus-circle"></i>
+    Ajouter Un Nouveau Cycle
+  </a>
+  <div class="container">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h2 class="h2">La Liste Des Cycles Disponibles </h2>
+      </div>
+     
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">nom</th>
+              <th scope="col">Description</th>
+              <th scope="col">Période</th>
+              <th class="text-center" scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of Cycles; let i = index">
+              <th scope="row">{{c.nom}}</th>
+              <td>{{c.description}}</td>
+              <td>{{c.periode}}</td>
+              <td class="text-center">
+                <button class="btn btn-sm btn-primary" routerLink="/edit-cycle/{{c._id}}"><i class="bi bi-pencil"></i> Modifier</button> <br>
+                <button class="btn btn-sm btn-danger" (click)="delete(c._id, i)" ><i class="bi bi-trash"></i> Retirer</button>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>

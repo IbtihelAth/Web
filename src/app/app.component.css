@@ -1,0 +1,10 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+#onhoverIcon{
+    visibility: hidden;
+}
+#doorIcon:hover ~ #onhoverIcon{
+    visibility: visible;
+    background-color: aliceblue;
+    color: #026670;
+}
