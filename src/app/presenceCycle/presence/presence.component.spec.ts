@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DeleteCycleComponent } from './delete-cycle.component';
+import { PresenceComponent } from './presence.component';
 
-describe('DeleteCycleComponent', () => {
-  let component: DeleteCycleComponent;
-  let fixture: ComponentFixture<DeleteCycleComponent>;
+describe('PresenceComponent', () => {
+  let component: PresenceComponent;
+  let fixture: ComponentFixture<PresenceComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DeleteCycleComponent ]
+      declarations: [ PresenceComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DeleteCycleComponent);
+    fixture = TestBed.createComponent(PresenceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

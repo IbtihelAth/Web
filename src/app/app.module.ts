@@ -17,6 +17,8 @@ import { EditCycleComponent } from './cycle/edit-cycle/edit-cycle.component';
 import { CycleListComponent } from './cycle/cycle-list/cycle-list.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PresenceComponent } from './presenceCycle/presence/presence.component';
+import { PresenceListComponent } from './presenceCycle/presence-list/presence-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProposComponent,
     AddCycleComponent,
     EditCycleComponent,
-    CycleListComponent
+    CycleListComponent,
+    PresenceComponent,
+    PresenceListComponent
   ],
   imports: [
     BrowserModule,

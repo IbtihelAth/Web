@@ -8,6 +8,9 @@ import { ProposComponent } from './propos/propos.component';
 import { CycleListComponent } from './cycle/cycle-list/cycle-list.component';
 import { AddCycleComponent } from './cycle/add-cycle/add-cycle.component';
 import { EditCycleComponent } from './cycle/edit-cycle/edit-cycle.component';
+import { FormulaireComponent } from './formulaire/formulaire.component';
+import { PresenceComponent } from './presenceCycle/presence/presence.component';
+import { PresenceListComponent } from './presenceCycle/presence-list/presence-list.component';
 
 const routes: Routes = [
   {path:'inscription',component:InscriptionComponent},
@@ -17,7 +20,10 @@ const routes: Routes = [
   {path:'Apropos',component:ProposComponent},
   {path:'cycle-list',component:CycleListComponent},
   {path:'add-cycle',component:AddCycleComponent},
-  {path:'edit-cycle/:id',component:EditCycleComponent}
+  {path:'edit-cycle/:id',component:EditCycleComponent},
+  {path:'formulaire',component:FormulaireComponent},
+  {path:'add-presence',component:PresenceComponent},
+  {path:'presence-list',component:PresenceListComponent}
 ];
 
 @NgModule({
